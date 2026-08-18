@@ -24,4 +24,12 @@ describe("Alumno", () => {
     expect(resultado).toBe(true);
   });
  */
+
+    test("Un alumno debe tener un legajo", () => {
+    
+    var alumno1 = new Alumno('UCP', 20);
+    alumno1.legajo = "123456789";
+
+    expect(alumno1.legajo).toBe('123456789');
+  });
 });
