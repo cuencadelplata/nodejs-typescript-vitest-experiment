@@ -1,10 +1,17 @@
-export class Profesor {
+import { Persona } from "./Persona";
 
- public legajo: string;
+export class Profesor 
+             extends Persona  {
+
 
   constructor(
-    public nombre: string
-  ) {}
+     nombre: string
+  ) {
+
+    super(nombre);
+    
+    this.legajo
+  }
 
 }
 
