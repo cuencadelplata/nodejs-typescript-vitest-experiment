@@ -25,6 +25,27 @@ describe("Alumno", () => {
   });
  */
 
+    test("Test de identidad", () => {
+    
+    var alumno1 = new Alumno('Juan Perez', 20);
+    var alumno2 = new Alumno('Juan Perez', 20);
+   
+    var sonIguales1y2 = (alumno1 == alumno2);
+
+    expect(sonIguales1y2).toBe(false);
+
+    var alumno3 = alumno1;
+    
+    var sonIguales1y3 = (alumno1 == alumno3);
+    expect(sonIguales1y3).toBe(true);
+
+    alumno1.nombre = "Maria DB";
+    expect(alumno1.nombre).toBe("Maria DB");
+    expect(alumno3.nombre).toBe("Maria DB");
+  });
+
+
+
     test("Un alumno debe tener un legajo", () => {
     
     var alumno1 = new Alumno('UCP', 20);
