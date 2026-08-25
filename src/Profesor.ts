@@ -7,10 +7,14 @@ export class Profesor
   constructor(
      nombre: string
   ) {
-
     super(nombre);
+
+    this.tipo = "Profesor";
     
+    //comentarios 
     this.legajo
+
+    
   }
 
 }
