@@ -1,4 +1,6 @@
-export class Persona {
+export class Persona 
+        implements IConNombre
+{
 
  public legajo: string;
  public tipo: string;
